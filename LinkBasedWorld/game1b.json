@@ -1,0 +1,133 @@
+{
+    "Title": "Escape the Mall!",
+    "Credits": "Created by Adam Smith (amsmith@ucsc.edu). Edited by Lo Weislak",
+    "InitialLocation": "Fountain",
+    "Locations": {
+        "Fountain": {
+            "Body": "The fountain is dry. Empty stores surround you from all sides.",
+            "Choices": [
+                {
+                    "Text": "Kiosk",
+                    "Target": "Kiosk"
+                },
+                {
+                    "Text": "Broken Escalator",
+                    "Target": "BrokenEscalator"
+                },
+                {
+                    "Text": "Elevator",
+                    "Target": "Elevator"
+                },
+                {
+                    "Text": "Main Entrance",
+                    "Target": "MainEntrance"
+                }
+            ]
+        },
+        "Kiosk": {
+            "Body": "There is a bunch of cheap electronic toys scattered around the kiosk.",
+            "Choices": [
+                {
+                    "Text": "Search the kiosk",
+                    "Target": "Kiosk"
+                },
+                {
+                    "Text": "Broken Escalator",
+                    "Target": "BrokenEscalator"
+                },
+                {
+                    "Text": "Fountain",
+                    "Target": "Fountain"
+                }
+            ]
+        },
+        "MainEntrance": {
+            "Body": "You can see the parking lot on the other side of the glass doors. This is the only exit.",
+            "Choices": [
+                {
+                    "Text": "Fountain",
+                    "Target": "Fountain"
+                }
+            ]
+        },
+        "BrokenEscalator": {
+            "Body": "The dilapidated escalator sits before you. There's no way you can go up this way",
+            "Choices": [
+                {
+                    "Text": "Electrical Room",
+                    "Target": "ElectricalRoom"
+                },
+                {
+                    "Text": "Fountain",
+                    "Target": "Fountain"
+                }
+            ]
+        },
+        "ElectricalRoom": {
+            "Body": "There are a number of buttons and switches in the tiny electrical room. You see a big, red breaker that looks promising.",
+            "Choices": [
+                {
+                    "Text": "Flip the breaker",
+                    "Target": "BrokenEscalator"
+                },
+                {
+                    "Text": "Exit the room",
+                    "Target": "BrokenEscalator"
+                }
+
+            ]
+        },
+        "Elevator": {
+            "Body": "The elevator.",
+            "Choices": [
+                {
+                    "Text": "Push the button that's labeled '2'",
+                    "Target": "UpperLevel"
+                },
+                {
+                    "Text": "Push the button that's labeled '1'",
+                    "Target": "Fountain"
+                }
+            ]
+        },
+        "UpperLevel": {
+            "Body": "The upper level of the mall. There's only a resturant and a office up here.",
+            "Choices": [
+                {
+                    "Text": "Security Office",
+                    "Target": "SecurityOffice"
+                },
+                {
+                    "Text": "Restaurant",
+                    "Target": "Restaurant"
+                },
+                {
+                    "Text": "Elevator",
+                    "Target": "Elevator"
+                }
+            ]
+        },
+        "SecurityOffice": {
+            "Body": "The security office is filled with screens sitting above a large desk. You see a button labeled 'Main Door Lock'.",
+            "Choices": [
+                {
+                    "Text": "Push the button",
+                    "Target": "SecurityOffice"
+                },
+                {
+                    "Text": "Exit the security office",
+                    "Target": "UpperLevel"
+                }
+            ]
+        },
+        "Restaurant": {
+            "Body": "The restaurant. You see a key card sitting on the register, but it's blocked by rubble.",
+            "Choices": [
+                {
+                    "Text": "Exit the restaurant",
+                    "Target": "UpperLevel"
+                }
+            ]
+        }
+    }
+}
